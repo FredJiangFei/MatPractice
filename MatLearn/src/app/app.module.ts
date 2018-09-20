@@ -31,11 +31,13 @@ import {
   MatChipsModule,
   MatFormFieldModule
 } from '@angular/material';
+import { InputComponent } from './input/input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormFieldComponent,
+    InputComponent,
   ],
   imports: [
     BrowserModule,
