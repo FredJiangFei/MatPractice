@@ -32,12 +32,14 @@ import {
   MatFormFieldModule
 } from '@angular/material';
 import { InputComponent } from './input/input.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormFieldComponent,
     InputComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
