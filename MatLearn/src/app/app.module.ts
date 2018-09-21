@@ -12,6 +12,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { MaterialModule } from './material.module';
 import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/material';
 import { MatMomentDateModule, MomentDateAdapter } from '@angular/material-moment-adapter';
+import { GridListComponent } from './grid-list/grid-list.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { MatMomentDateModule, MomentDateAdapter } from '@angular/material-moment
     InputComponent,
     CardComponent,
     DatepickerComponent,
+    GridListComponent,
   ],
   imports: [
     BrowserModule,
