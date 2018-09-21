@@ -5,13 +5,15 @@ import { FormFieldComponent } from './form-field/form-field.component';
 import { InputComponent } from './input/input.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { GridListComponent } from './grid-list/grid-list.component';
+import { IconComponent } from './icon/icon.component';
 
 const routes: Routes = [
     { path: 'formfield', component: FormFieldComponent },
     { path: 'input', component: InputComponent },
     { path: 'card', component: CardComponent },
     { path: 'datepicker', component: DatepickerComponent },
-    { path: 'gridList', component: GridListComponent }
+    { path: 'gridList', component: GridListComponent },
+    { path: 'icon', component: IconComponent }
 ];
 
 @NgModule({

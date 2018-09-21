@@ -13,6 +13,7 @@ import { MaterialModule } from './material.module';
 import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/material';
 import { MatMomentDateModule, MomentDateAdapter } from '@angular/material-moment-adapter';
 import { GridListComponent } from './grid-list/grid-list.component';
+import { IconComponent } from './icon/icon.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { GridListComponent } from './grid-list/grid-list.component';
     CardComponent,
     DatepickerComponent,
     GridListComponent,
+    IconComponent,
   ],
   imports: [
     BrowserModule,
