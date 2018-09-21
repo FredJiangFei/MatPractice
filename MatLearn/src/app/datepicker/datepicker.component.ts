@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { MatDatepicker } from '@angular/material/datepicker';
+import { MatDatepicker, MatDatepickerInputEvent } from '@angular/material/datepicker';
 import * as moment from 'moment';
 import { Moment } from 'moment';
-import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/material';
-import { MomentDateAdapter } from '@angular/material-moment-adapter';
+import { MAT_DATE_FORMATS } from '@angular/material';
 
 export const MY_FORMATS = {
   parse: {
@@ -43,5 +42,9 @@ export class DatepickerComponent {
     ctrlValue.month(month);
     this.date.setValue(ctrlValue);
     datepicker.close();
+  }
+
+  addEvent(type: string, event: MatDatepickerInputEvent<Date>) {
+    console.log(`${type}: ${event.value}`);
   }
 }
