@@ -3,36 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LayoutModule } from '@angular/cdk/layout';
 import { FormFieldComponent } from './form-field/form-field.component';
 import { AppRoutingModule } from './app-routing.module';
-
-import {
-  MatIconModule,
-  MatButtonModule,
-  MatToolbarModule,
-  MatSidenavModule,
-  MatCardModule,
-  MatInputModule,
-  MatListModule,
-  MatSlideToggleModule,
-  MatGridListModule,
-  MatDialogModule,
-  MatAutocompleteModule,
-  MatMenuModule,
-  MatCheckboxModule,
-  MatRadioModule,
-  MatDatepickerModule,
-  MatNativeDateModule,
-  MatSelectModule,
-  MatPaginatorModule,
-  MatTabsModule,
-  MatBadgeModule,
-  MatChipsModule,
-  MatFormFieldModule
-} from '@angular/material';
 import { InputComponent } from './input/input.component';
 import { CardComponent } from './card/card.component';
+import { DatepickerComponent } from './datepicker/datepicker.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { MaterialModule } from './material.module';
+import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/material';
+import { MatMomentDateModule, MomentDateAdapter } from '@angular/material-moment-adapter';
+
 
 @NgModule({
   declarations: [
@@ -40,35 +20,20 @@ import { CardComponent } from './card/card.component';
     FormFieldComponent,
     InputComponent,
     CardComponent,
+    DatepickerComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    LayoutModule,
-    MatIconModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatCardModule,
-    MatInputModule,
-    MatListModule,
-    MatSlideToggleModule,
-    MatGridListModule,
-    MatDialogModule,
-    MatAutocompleteModule,
-    MatMenuModule,
-    MatCheckboxModule,
-    MatRadioModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatSelectModule,
-    MatPaginatorModule,
-    MatTabsModule,
-    MatBadgeModule,
-    MatChipsModule,
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatMomentDateModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
