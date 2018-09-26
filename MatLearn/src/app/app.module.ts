@@ -10,10 +10,12 @@ import { CardComponent } from './card/card.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { MaterialModule } from './material.module';
-import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/material';
+import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE, MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material';
 import { MatMomentDateModule, MomentDateAdapter } from '@angular/material-moment-adapter';
 import { GridListComponent } from './grid-list/grid-list.component';
 import { IconComponent } from './icon/icon.component';
+import { DialogComponent } from './dialog/dialog.component';
+import { DialogShowComponent } from './dialog-show/dialog-show.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { IconComponent } from './icon/icon.component';
     DatepickerComponent,
     GridListComponent,
     IconComponent,
+    DialogComponent,
+    DialogShowComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,8 +40,9 @@ import { IconComponent } from './icon/icon.component';
     AppRoutingModule,
   ],
   providers: [
-
+      {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: true}}
   ],
+  entryComponents: [DialogShowComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

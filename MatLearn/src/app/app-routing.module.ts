@@ -6,6 +6,7 @@ import { InputComponent } from './input/input.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { GridListComponent } from './grid-list/grid-list.component';
 import { IconComponent } from './icon/icon.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 const routes: Routes = [
     { path: 'formfield', component: FormFieldComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
     { path: 'card', component: CardComponent },
     { path: 'datepicker', component: DatepickerComponent },
     { path: 'gridList', component: GridListComponent },
-    { path: 'icon', component: IconComponent }
+    { path: 'icon', component: IconComponent },
+    { path: 'dialog', component: DialogComponent }
 ];
 
 @NgModule({
