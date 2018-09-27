@@ -16,7 +16,7 @@ import { GridListComponent } from './grid-list/grid-list.component';
 import { IconComponent } from './icon/icon.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { DialogShowComponent } from './dialog-show/dialog-show.component';
-
+import { AnimationComponent } from './animation/animation.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +29,7 @@ import { DialogShowComponent } from './dialog-show/dialog-show.component';
     IconComponent,
     DialogComponent,
     DialogShowComponent,
+    AnimationComponent,
   ],
   imports: [
     BrowserModule,

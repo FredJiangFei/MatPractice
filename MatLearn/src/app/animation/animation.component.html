@@ -1,0 +1,9 @@
+<div [@openClose]="isOpen">
+  <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
+</div>
+
+<div @myInsertRemoveTrigger *ngIf="isOpen">
+  <p>The box is inserted</p>
+</div>
+
+<button (click)="toggle()">Toggle</button>

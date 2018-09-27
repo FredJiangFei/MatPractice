@@ -7,6 +7,7 @@ import { DatepickerComponent } from './datepicker/datepicker.component';
 import { GridListComponent } from './grid-list/grid-list.component';
 import { IconComponent } from './icon/icon.component';
 import { DialogComponent } from './dialog/dialog.component';
+import { AnimationComponent } from './animation/animation.component';
 
 const routes: Routes = [
     { path: 'formfield', component: FormFieldComponent },
@@ -15,7 +16,8 @@ const routes: Routes = [
     { path: 'datepicker', component: DatepickerComponent },
     { path: 'gridList', component: GridListComponent },
     { path: 'icon', component: IconComponent },
-    { path: 'dialog', component: DialogComponent }
+    { path: 'dialog', component: DialogComponent },
+    { path: 'animation', component: AnimationComponent }
 ];
 
 @NgModule({
